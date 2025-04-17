@@ -15,6 +15,11 @@ models:
             tests:
               - unique
             data_type: int
+      versions:
+        - v: 1
+          description: "A starter dbt model"
+        - v: 2
+          description: "A starter dbt model with updates"
     - name: my_second_dbt_model
       description: "A starter dbt model"
       columns:
