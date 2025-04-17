@@ -6,9 +6,15 @@ models:
       description: "A starter dbt model"
       access: public
       group: platform
+      config:
+        contract:
+          enforced: true
       columns:
           - name: id
             description: "The primary key for this table"
+            tests:
+              - unique
+            data_type: int
     - name: my_second_dbt_model
       description: "A starter dbt model"
       columns:
